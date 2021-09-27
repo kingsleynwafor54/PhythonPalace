@@ -1,3 +1,6 @@
+import enum
+
+
 class Animal:
     def __init__(self, name, age):
         self.name = name
@@ -22,3 +25,14 @@ d= Animal("django",12)
 print(d.getAge())
 
 
+class Days(enum.Enum):
+    mon="Monday"
+    tue="Tuesday"
+    wed="Wednessday"
+    thur="Thursday"
+    def getMon(self):
+        return self.mon
+
+
+for weekly in Days:
+    print(weekly.value)
