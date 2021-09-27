@@ -2,10 +2,10 @@ import enum
 
 
 class Days(enum.Enum):
-    mon="Monday"
-    tue="Tuesday"
-    wed="Wednessday"
-    thur="Thursday"
+    MONDAY = "Monday"
+    TUESDAY= "Tuesday"
+    WEDNESDAY = "Wednessday"
+    THURSDAY = "Thursday"
     def getMon(self):
         return self.mon
 
